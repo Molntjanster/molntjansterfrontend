@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const EventDetailsPage = () => {
     const {id} = useParams()
@@ -24,6 +24,7 @@ const EventDetailsPage = () => {
   return (
     <div className="event-details">
         <h1>{event.title}</h1>
+        <Link to={`/events/booking/${id}`}>Book Event</Link> 
     </div>
   )
 }

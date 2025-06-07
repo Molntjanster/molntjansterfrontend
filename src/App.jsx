@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import EventPage from './assets/pages/EventPage'
+import EventDetailsPage from './assets/pages/EventDetailsPage'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<EventPage />} />
+      <Route path="/events/:id" element={<EventDetailsPage />} />
       
        </Routes>
     </>

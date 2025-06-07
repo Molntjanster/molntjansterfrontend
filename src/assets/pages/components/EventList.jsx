@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import EventItem from './EventItem'
 
 const EventList = () => {
@@ -12,11 +12,13 @@ const EventList = () => {
             setEvents(response.result)
         }
     }
+
     useEffect(() => {
         getEvents()
 
     }, [])
   return (
+    
     <section id="events">
         {
             events.map(event => (<EventItem key={event.id} item={event} />))

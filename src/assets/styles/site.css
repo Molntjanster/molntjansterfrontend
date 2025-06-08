@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 :root {
 /* properties */
@@ -105,6 +107,7 @@
   --border-color: var(--grey-40);
   --separator-border-color: var(--grey-40);
   --separator-text-color: var(--grey-60);
+  --sidebar-background-color: var(--cool-grey-10);
 
 
 --dark-opacity-20: rgba(26, 25, 38, 0.2);
@@ -350,13 +353,6 @@ html, body {
 
 }
 
-.dropdown-body {
-
-}
-
-.dropdown-footer {
-
-}
 
 .dropdown-options {
 display: grid;
@@ -1020,7 +1016,7 @@ textarea,
 /* sections */
 #sidebar {
 
-  
+  background-color: var(--sidebar-background-color);
   border-right: 1px solid var(--border-color);
   padding: 1.5rem 2rem;
   grid-template-rows: auto auto 1fr;
@@ -1032,7 +1028,7 @@ textarea,
   grid-template-columns: 1fr auto;
   align-items: center;
   padding: 1.5rem 2rem;
-  border-bottom: 1px solid var(--border-color);
+  background-color: var(--header-background-color);
 }
 
 .header-actions {
@@ -1255,4 +1251,5 @@ textarea,
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
+  background-color: var(--main-background-color);
 }

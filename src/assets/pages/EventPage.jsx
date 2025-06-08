@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
-import TopBar from '../components/Topbar';
+import TopBar from '../components/TopBar';
 import EventList from '../components/EventList';
 
 const EventPage = () => {

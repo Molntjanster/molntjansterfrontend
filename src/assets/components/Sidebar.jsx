@@ -6,23 +6,28 @@ const Sidebar = () => {
     <aside id="sidebar">
       <section className="logotype">
         <a href="#" className="logo">
-          <img src="/images/logotype/alpha-logotype-icon.svg" alt="#" />
-          <span>alpha</span>
+          <img src="/images/logotype/v-logotype.svg" alt="Ventixe Logo" />
         </a>
       </section>
+
       <nav className="nav-links">
-        <NavLink to="/" className="nav-link" activeClassName="active">
+        <NavLink
+          to="/"
+          className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
+        >
           <i className="fa-solid fa-briefcase"></i>
-          <span>Projects</span>
+          <span>Dashboard</span>
         </NavLink>
-        <NavLink to="/clients" className="nav-link">
+
+        <NavLink
+          to="/events"
+          className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
+        >
           <i className="fa-solid fa-handshake"></i>
-          <span>Clients</span>
+          <span>Events</span>
         </NavLink>
-        <NavLink to="/members" className="nav-link">
-          <i className="fa-solid fa-user-group"></i>
-          <span>Members</span>
-        </NavLink>
+
+
       </nav>
     </aside>
   );
